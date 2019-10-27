@@ -1,15 +1,54 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #ffcb05;
-    padding: 10px;
-    width: 50%;
+.fakeimg {
+    height: 200px;
+    background: #aaa;
   }
 
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #00274c;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+.pokemon_image {
+  height: 10em;
+  width: 20em;
+}
+
+.truck_image {
+  height: 10em;
+  width: 20em;
+}
+
+.img_outline{
+  height: 225px;
+  width: auto;
+  background: rgba(255,255,255,.5);
+  cursor: pointer;
+}
+
+
+.profile_img {
+  height: 225px;
+  width: 325px;
+  padding: 2.5%
+}
+
+p, h2, h3, h4, h5, h6 {
+  color: #e3e3e3;
+}
+
+a {
+  color: #e3e3e3 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: skyblue !important;
+}
+
+
+.tab { margin-left: 40px; }
+
+
+
+#quote {
+  text-align: center;
+}
+
+#dropdown-list {
+  color: #484848 !important;
+}

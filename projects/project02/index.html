@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ahmed Saeed | Project 02</title>
+        <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../styles/main.css" />
+        <link rel="stylesheet" href="../../styles/bootstrap.min.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+        <script src="../../js/jquery.min.js"></script>
+        <script src="../../js/popper.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "styles/p2.css">
+        <script src="js/p2.js" type="text/javascript"></script>
+    </head>
+    <body background="../../images/background.jpg" onload="start()">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="../../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/ahmedsaeed-/" target="_blank"><i class="fa fa-linkedin-square"></i> Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/ahmedsaeed.dev" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Current Courseload
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="dropdown-list" class="dropdown-item" href="../../cis435.html">CIS 435</a>
+                            <a id="dropdown-list" class="dropdown-item" href="../../cis4962.html">CIS 4962</a>
+                            <a id="dropdown-list" class="dropdown-item" href="../../engr400.html">ENGR 400</a>
+                        </div>
+                    </li>   
+                </ul>
+            </div>  
+        </nav>
+
+        <div class="container" style="margin-top:30px;">
+          <div class="row">
+            <div class="col-sm-4">
+                <h2>Ahmed L Saeed</h2>
+                <h6></h6>
+                <div onclick="window.location.href='../../index.html'"  class="img_outline"><img class="profile_img" src="../../images/profile_img.jpg" alt=""></div>
+                <br>
+                <p>Hi! I'm Ahmed, a software engineering major at UM-Dearborn. I'm a person who loves learning and teaching. One of my favorite quotes is</p>
+                    <p id="quote"><i>"Learn as if you are immortal...<br>
+                    Teach as if you are not..."</i></p>
+                    
+                <h3>Current Courseload</h3>
+                <p>Click the links below to visit pages on the site!</p>
+                
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                      <button onclick="window.location.href='../../cis435.html'" type="button" class="btn btn-secondary btn-lg btn-block">CIS 435</button><br>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="window.location.href='../../cis4962.html'" type="button" class="btn btn-secondary btn-lg btn-block">CIS 4962</button><br>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="window.location.href='../../engr400.html'" type="button" class="btn btn-secondary btn-lg btn-block">ENGR 400</button><br>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+
+            <!-- Page Information -->
+            <div class="col-sm-8">
+              <h2>CIS 435 | Project 02</h2>
+              <h4>Fifteen Squares</h4>
+              <p><strong>How to Play: </strong> Click any adjacent tile near the empty tile to swap position. 
+                The goal is to get the entire board ordered in number order! 
+                To start over, press the Start New Game button. 
+                To play an easy game, click the Simple Game button and click the '15' tile. </p>
+              <table>
+                <tr>
+                  <td id="0" onclick="userClick(this)"></td>
+                  <td id="1" onclick="userClick(this)"></td>
+                  <td id="2" onclick="userClick(this)"></td>
+                  <td id="3" onclick="userClick(this)"></td>
+                </tr>
+                <tr>
+                  <td id="4" onclick="userClick(this)"></td>
+                  <td id="5" onclick="userClick(this)"></td>
+                  <td id="6" onclick="userClick(this)"></td>
+                  <td id="7" onclick="userClick(this)"></td>
+                </tr>
+                <tr>
+                  <td id="8" onclick="userClick(this)"></td>
+                  <td id="9" onclick="userClick(this)"></td>
+                  <td id="10" onclick="userClick(this)"></td>
+                  <td id="11" onclick="userClick(this)"></td>
+                </tr>
+                <tr>
+                  <td id="12" onclick="userClick(this)"></td>
+                  <td id="13" onclick="userClick(this)"></td>
+                  <td id="14" onclick="userClick(this)"></td>
+                  <td id="15" onclick="userClick(this)"></td>
+                </tr>
+              </table>
+              <br>
+              <p id="moves">Moves: 0</p>
+              <p id="time">Time Elapsed: 0</p>
+              <p>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="simpleGame()">Simple Game</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="window.location.reload()">Start New Game</button>
+              </p>
+                
+            </div>
+            
+        </div>
+          
+        </div>
+        <hr>
+        <div class="text-center" style="margin-bottom:0">
+            <p>&copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>. Ahmed L Saeed. All rights reserved.</p>
+        </div>
+
+    </body>
+</html>

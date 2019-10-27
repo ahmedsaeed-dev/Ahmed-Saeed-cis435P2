@@ -1,0 +1,18 @@
+table {
+    background-color: #ffcb05;
+    padding: 5px;
+    width: 100%;
+    height: 50%;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.8);
+    font-size: xx-large;
+}
+
+.empty {
+    background-color: #00274c;
+}

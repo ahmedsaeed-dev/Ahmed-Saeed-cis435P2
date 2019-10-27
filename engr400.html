@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ahmed Saeed | Home Page</title>
+        <title>Ahmed Saeed | ENGR 400</title>
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/bootstrap.min.css" />
@@ -11,7 +11,10 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
+    
+    <!-- body start -->
     <body background="images/background.jpg">
+        <!-- nav start -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -37,13 +40,14 @@
                     </li>   
                 </ul>
             </div>  
-        </nav>
-
+        </nav> 
+        <!-- nav end -->
         <div class="container" style="margin-top:30px">
             <div class="row">
                 <div class="col-sm-4">
                     <h2>Ahmed L Saeed</h2>
-                    <div onclick="window.location.href='index.html'"  class="img_outline"><img class="profile_img" src="images/profile_img.jpg" alt=""></div>
+                    <h6></h6>
+                    <div onclick="window.location.href='index.html'" class="img_outline"><img class="profile_img" src="images/profile_img.jpg" alt=""></div>
                     <br>
                     <p>Hi! I'm Ahmed, a software engineering major at UM-Dearborn. I'm a person who loves learning and teaching. One of my favorite quotes is</p>
                         <p id="quote"><i>"Learn as if you are immortal...<br>
@@ -51,33 +55,38 @@
                     <h3>Current Courseload</h3>
                     <p>Click the links below to visit pages on the site!</p>
                     <ul class="nav nav-pills flex-column">
-                        <li class="nav-item">
-                            <button onclick="window.location.href='cis435.html'" type="button" class="btn btn-secondary btn-lg btn-block">CIS 435</button><br>
-                        </li>
-                        <li class="nav-item">
-                        <button onclick="window.location.href='cis4962.html'" type="button" class="btn btn-secondary btn-lg btn-block">CIS 4962</button><br>
-                        </li>
-                        <li class="nav-item">
-                            <button onclick="window.location.href='engr400.html'" type="button" class="btn btn-secondary btn-lg btn-block">ENGR 400</button><br>
-                        </li>
+                            <li class="nav-item">
+                                    <button onclick="window.location.href='cis435.html'" type="button" class="btn btn-secondary btn-lg btn-block ">CIS 435</button><br>
+                            </li>
+                            <li class="nav-item">
+                                <button onclick="window.location.href='cis4962.html'" type="button" class="btn btn-secondary btn-lg btn-block">CIS 4962</button><br>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-secondary btn-lg btn-block disabled">ENGR 400</button><br>
+                            </li>
                     </ul>
                     <hr class="d-sm-none">
                 </div>
-                
-                <div class="col-sm-8">
-                    <h2>My New Car!</h2>
-                    <h5>10/05/2019</h5>
-                    <div><img class="truck_image" src="images/f150.jpg" alt=""></div>
-                    <br>
-                    <p>A few weeks ago, I leased a new car! Trucks are my favorite type of car and I always loved the color cherry red. After my old lease was up, I saw this in the lot and I knew I had to have it.</p>
-                    <br>
 
-                    <h2>My Favorite Pokemon - <a href="https://youtu.be/ORxm2xZpt78?t=125" target="_blank">Krookodile!</a></h2>
-                    <h5>10/01/2019</h5>
-                    <div><img class="pokemon_image" src="images/pokemon.gif" alt=""></div>
-                    <br>
-                    <p>My favorite Pokemon is Krookodile. I like the color scheme and the fact that it's eyes look like sun-glasses.</p>
+
+                <!-- Page Information -->
+               <div class="col-sm-8">
+                    <h2>ENGR 400 - Applied Business Techniques for Engineers and Computer Scientists</h2>
+                    <h5>3 Credit Hours, Fall 2019 <br>
+                        Lectures: Monday, 6:00 - 8:45 PM, CASL 1030</h5>
+                    
+                    <h3>Contact Information:</h3>
+                    <p class="tab"> Prof. Jill Plavcan<br>
+                        Office Location: None<br>
+                        Phone Number: None<br>
+                        Email: <a href="mailto:jplavcan@umich.edu"> jplavcan@umich.edu <i class="fa fa-envelope"></i></a><br>
+                    </p>
+                    
+                    <h3>Course Description:</h3>
+                    <p class="tab">This course will introduce the students to those business skills/tools that will be needed in their jobs soon after graduation and will make them better and well-rounded engineers.  They will be able to function better within today’s global business environment.  The major topics of the course are business related system thinking, management finance, financial accounting, team concepts and communication, organizational behavior, program and project management and entrepreneurship.  The course includes on campus industry experience via discussions with industry experts. Case studies will be utilized to supplement all the course elements.<br><p>
                 </div>
+                <!-- End Page Information -->
+
             </div>
         </div>
         <hr>

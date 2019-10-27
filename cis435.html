@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ahmed Saeed | CIS 435</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/bootstrap.min.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body background="images/background.jpg">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/ahmedsaeed-/" target="_blank"><i class="fa fa-linkedin-square"></i> Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/ahmedsaeed.dev" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Current Courseload
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="dropdown-list" class="dropdown-item" href="cis435.html">CIS 435</a>
+                            <a id="dropdown-list" class="dropdown-item" href="cis4962.html">CIS 4962</a>
+                            <a id="dropdown-list" class="dropdown-item" href="engr400.html">ENGR 400</a>
+                        </div>
+                    </li>  
+                </ul>
+            </div>  
+        </nav>
+
+        <div class="container" style="margin-top:30px">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>Ahmed L Saeed</h2>
+                    <h6></h6>
+                    <div onclick="window.location.href='index.html'"  class="img_outline"><img class="profile_img" src="images/profile_img.jpg" alt=""></div>
+                    <br>
+                    <p>Hi! I'm Ahmed, a software engineering major at UM-Dearborn. I'm a person who loves learning and teaching. One of my favorite quotes is</p>
+                        <p id="quote"><i>"Learn as if you are immortal...<br>
+                        Teach as if you are not..."</i></p>
+                        
+                    <h3>Current Courseload</h3>
+                    <p>Click the links below to visit pages on the site!</p>
+                    
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                                <button type="button" class="btn btn-secondary btn-lg btn-block disabled">CIS 435</button><br>
+                        </li>
+                        <li class="nav-item">
+                            <button onclick="window.location.href='cis4962.html'" type="button" class="btn btn-secondary btn-lg btn-block">CIS 4962</button><br>
+                        </li>
+                        <li class="nav-item">
+                            <button onclick="window.location.href='engr400.html'" type="button" class="btn btn-secondary btn-lg btn-block">ENGR 400</button><br>
+                        </li>
+                    </ul>
+                    <hr class="d-sm-none">
+                </div>
+
+                <!-- Page Information -->
+                <div class="col-sm-6">
+                    <h2>CIS 435 - Web Technology</h2>
+                    <h5>3 Credit Hours, Fall 2019 <br>
+                        Lectures: Thursday, 6:00 - 8:45 PM, HPEC 1181</h5>
+                    <!-- <div class="fakeimg">Fake Image</div> -->
+                    <h3>Contact Information:</h3>
+                    <p class="tab"><a href="http://www-personal.umd.umich.edu/~jinhua/" target="_blank"> Prof. Jinhua Guo <i class="fa fa-external-link"></i> </a><br>
+                        Office Location: <a href="https://goo.gl/maps/sCxg7PAeJZhL83ucA" target="_blank">211 CIS <i class="fa fa-map"></i> </a><br>
+                        Phone Number: <a href="tel:+13135836439" style="text-decoration: none"> (313) 583-6439 <i class="fa fa-phone"></i></a><br>
+                        Email: <a href="mailto:jinhua@umich.edu"> jinhua@umich.edu <i class="fa fa-envelope"></i></a></p>
+                    <h3>Course Description:</h3>
+                    <p class="tab">The study of technologies used to design and implement web-based applications. Topics include HTML, CSS, JavaScript, PHP, Rich Internet Application technologies (AJAX), web servers, back-end database connectivity (MySQL), web security, multimedia, XML, JSON, and web services.<br><p>
+                        <h4 class="tab" >Prerequisites:</h4> 
+                        <p class="tab" >  Previous or concurrent enrollment in CIS 375 or CIS553 or equivalent.</p>
+            
+                    <!--<i class="fa fa-external-link"></i>-->
+                    <h3>Assignment Summaries:</h3>
+                    <p class="tab"><a href="documents/CIS435-525 F19 Project1.pdf" target="_blank">Project 01 <i class="fa fa-external-link"></i></a>: Create a web page that covers topics discussed in chapters 2 through 8. Create a link to your current courses including this one, CIS 435. List some of your hobbies, and include a picture of yourself.</p>
+                    <p class="tab"><a href="projects/project02/index.html" target="_blank">Project 02 <i class="fa fa-external-link"></i></a>: To be announced...</p>
+                    <p class="tab"><a href="documents/CIS435-525F19 Term Project.pdf" target="_blank">Term Project <i class="fa fa-external-link"></i></a>: Students taking this course will complete a term project in small groups. The project will allow
+                        you to put some of the concept introduced in the lectures into practical use. The project is a big
+                        part of the course and accounts for 35% of the final grade. You will be required to turn in a
+                        project proposal, give two presentations on your project, and turn in a progress report and a final
+                        report. Details for the presentations and reports are explained below.</p>
+                    
+                </div>
+                
+                <div class="col-sm-2">
+                    <h2>Files</h2>
+                    <h4>Prompts</h4>
+                    <ul style="color: whitesmoke;">
+                        <li>
+                            <a href="documents/CIS435-525 F19 Project1.pdf" target="_blank">Project 01</a>                   
+                        </li>
+                        <li>
+                                <a href="documents/CIS435-525 F19 Project2.pdf" target="_blank">Project 02</a>   
+                        </li>
+                        <li>
+                                <a href="documents/CIS435-525F19 Term Project.pdf" target="_blank">Term Project</a>   
+                        </li>
+                    </ul>
+                    <h4>Pages</h4>
+                    <ul style="color: whitesmoke;">
+                            <li>
+                                <a href="index.html" target="_blank">Project 01</a>                   
+                            </li>
+                            <li>
+                                    <a href="projects/project02/index.html" target="_blank">Project 02</a>   
+                            </li>
+                            <li>
+                                    <a href="documents/CIS435-525F19 Term Project.pdf" target="_blank">Term Project</a>   
+                            </li>
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <hr>
+        <div class="text-center" style="margin-bottom:0">
+            <p>&copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>. Ahmed L Saeed. All rights reserved.</p>
+        </div>
+
+    </body>
+</html>
