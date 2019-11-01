@@ -1,23 +1,14 @@
+// global javascript functions
 var empty;
 var moveCount;
 var isComplete = false;
 var time = 0;
 var cellId = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 
+// start time on page load
 window.addEventListener("load", startTimer, false);
 
-// Begins Time Elapsed count
-function startTimer() {
-    window.setInterval("updateTime()", 1000);
-} 
-
-// Updates Time Elapsed time variable
-function updateTime() { 
-    ++time;
-    document.getElementById("time").innerHTML ="Time Elapsed: " + time;
-} 
-
-function start() {
+function init() {
     moveCount = 0;
     isComplete = false;
 
@@ -29,7 +20,6 @@ function start() {
 
     randomNumber = cellId.sort(function () { return (Math.round(Math.random())-0.5);});
     
-
     for(var i=0; i < 16; i++) {
         var tmp = document.getElementById(i);
         if(randomNumber[i] == 16) {
@@ -47,25 +37,25 @@ function userClick(x) {
     if(isComplete) { return; }
 
     if(x.id != empty+'') {
-        var emptyI = Math.floor(empty/4);
-        var emptyJ = empty % 4;
-        var id_selected = Number(x.id);
-        var selectedI = Math.floor(id_selected/4);
-        var selectedJ = id_selected % 4;
+        var UpDownTiles = Math.floor(empty/4);
+        var LeftRightTiles = empty % 4;
+        var thisTile = Number(x.id);
+        var thisUpDown = Math.floor(thisTile/4);
+        var thisLeftRight = thisTile % 4;
 
-        if((Math.abs(emptyI - selectedI) == 1 && emptyJ == selectedJ) || (Math.abs(emptyJ - selectedJ) == 1 && emptyI == selectedI)) {
+        if((Math.abs(UpDownTiles - thisUpDown) == 1 && LeftRightTiles == thisLeftRight) || (Math.abs(LeftRightTiles - thisLeftRight) == 1 && UpDownTiles == thisUpDown)) {
             document.getElementById(empty).className = "cell";
             document.getElementById(empty).innerHTML = x.innerHTML;
             
             x.className = "cell empty";
             x.innerHTML = '';
             
-            empty = id_selected;
+            empty = thisTile;
             moveCount++;
 
             document.getElementById("moves").innerHTML = "Moves: " + moveCount;
             
-            if(isDone()){
+            if(checkGameOver()){
                 isComplete = true;
                 document.getElementById("moves").innerHTML = "Moves: " + moveCount;
                 if(confirm("Play again?")){ window.location.reload(); }
@@ -98,7 +88,7 @@ function simpleGame(){
     }
 }
 
-function isDone() {
+function checkGameOver() {
     return  document.getElementById('0').innerHTML == '1' &&
             document.getElementById('1').innerHTML == '2' &&
             document.getElementById('2').innerHTML == '3' &&
@@ -116,4 +106,13 @@ function isDone() {
             document.getElementById('14').innerHTML == '15';
 }
 
+// Begins Time Elapsed count
+function startTimer() {
+    window.setInterval("updateTime()", 1000);
+} 
 
+// Updates Time Elapsed time variable
+function updateTime() { 
+    ++time;
+    document.getElementById("time").innerHTML ="Time Elapsed: " + time;
+} 
